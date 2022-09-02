@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Anahuac</string>
+    <string name="hint_email_or_phone_number">Email or phone number</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Log In</string>
+    <string name="sign_up_txt">Sign Up for Facebook</string>
+    <string name="need_help_txt">Need Help?</string>
+    <string name="txt_title_p">Prácticas</string>
+    <string name="txt_login_fb">Login Facebook</string>
+
+    <string name="txt_sign_in_n">Sign In</string>
+    <string name="sign_up_txt_n">Login with Facebook</string>
+    <string name="txt_new_to_n">New to Netflix?</string>
+    <string name="txt_sign_up_now">Sign up now</string>
+    <string name="txt_remember_me">Remember me</string>
+    <string name="txt_login_nf">Login Netflix</string>
+    <string name="txt_recycle_campus">Lista Campus</string>
+    <string name="txt_anahuac_cancun">Universidad Anahuac -\n Campus Cancún</string>
+</resources>

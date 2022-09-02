@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="height_logo">100dp</dimen>
+    <dimen name="width_logo">100dp</dimen>
+
+    <dimen name="btn_li_fontsize">18sp</dimen>
+    <dimen name="need_help_fontsize">20sp</dimen>
+    <dimen name="signup_fontsize">20sp</dimen>
+    <dimen name="font_size_title">20sp</dimen>
+
+
+    <dimen name="height_logo_n">30dp</dimen>
+    <dimen name="margin_top_default">32dp</dimen>
+    <dimen name="small_txt">16sp</dimen>
+    <dimen name="height_minilogo">25dp</dimen>
+    <dimen name="width_minilogo">25dp</dimen>
+    <dimen name="campus_image_height">200dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+</resources>

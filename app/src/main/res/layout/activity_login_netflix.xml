@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_netflix">
+
+    <ImageView
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/height_logo_n"
+        android:layout_marginTop="@dimen/margin_top_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:src="@drawable/ic_netflix_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_sign_in_n"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/margin_default"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/email_input"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/psw_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:cardBackgroundColor="@color/bkg_grey"
+        app:layout_constraintBottom_toTopOf="@id/gl_center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_margin="@dimen/margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:textColorHint="@color/grey"
+                android:background="@null"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:cardBackgroundColor="@color/bkg_grey"
+        app:layout_constraintBottom_toTopOf="@id/psw_inputs">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:background="@null"
+                android:textColorHint="@color/grey"
+                android:hint="@string/hint_email_or_phone_number" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="366dp" />
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_sign_in_n"
+        android:textSize="@dimen/btn_li_fontsize"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="@dimen/margin_default"
+        app:layout_constraintTop_toBottomOf="@id/gl_center"
+        android:backgroundTint="@color/btn_login_netflix"
+        android:layout_marginTop="@dimen/margin_default"/>
+    <CheckBox
+        android:id="@+id/cb_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintTop_toBottomOf="@id/button_sign_in"
+        app:layout_constraintStart_toStartOf="@id/button_sign_in"/>
+
+    <TextView
+        android:id="@+id/txt_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_remember_me"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/cb_remember"
+        app:layout_constraintTop_toTopOf="@id/cb_remember"
+        app:layout_constraintBottom_toBottomOf="@id/cb_remember"/>/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/need_help_txt"
+        android:layout_marginEnd="@dimen/margin_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_remember"
+        app:layout_constraintBottom_toBottomOf="@id/txt_remember"
+        />
+
+    <ImageView
+        android:id="@+id/mini_logo_fb"
+        android:layout_width="@dimen/width_minilogo"
+        android:layout_height="@dimen/height_minilogo"
+        android:src="@drawable/ic_icon_facebook"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/margin_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txt_new_to_n"
+        app:layout_constraintEnd_toStartOf="@id/login_fb"/>
+
+    <TextView
+        android:id="@+id/login_fb"
+        android:text="@string/sign_up_txt_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/small_txt"
+        app:layout_constraintBottom_toTopOf="@id/txt_new_to_n"
+        app:layout_constraintStart_toEndOf="@id/mini_logo_fb"/>
+
+    <TextView
+        android:id="@+id/txt_new_to_n"
+        android:text="@string/txt_new_to_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/small_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_default"/>
+
+    <TextView
+        android:id="@+id/sign_up_now"
+        android:text="@string/txt_sign_up_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_txt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_new_to_n"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
