@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Anahuac"
         tools:targetApi="31">
         <activity
+            android:name=".AlertActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListCampusActivity"
             android:exported="false" />
         <activity

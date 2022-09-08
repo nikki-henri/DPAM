@@ -16,4 +16,9 @@
     <string name="txt_login_nf">Login Netflix</string>
     <string name="txt_recycle_campus">Lista Campus</string>
     <string name="txt_anahuac_cancun">Universidad Anahuac -\n Campus Cancún</string>
+    <string name="txt_more">Ver Más</string>
+
+    <string name="btn_alert">Alerta</string>
+    <string name="btn_alert_with_btn">Alerta con botones</string>
+    <string name="btn_alert_with_options">Alerta con opciones</string>
 </resources>
