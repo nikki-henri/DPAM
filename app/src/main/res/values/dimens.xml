@@ -19,4 +19,9 @@
     <dimen name="width_minilogo">25dp</dimen>
     <dimen name="campus_image_height">200dp</dimen>
     <dimen name="margin_medium">8dp</dimen>
+
+    <dimen name="size_icon">130dp</dimen>
+    <dimen name="ocho">8dp</dimen>
+    <dimen name="margin_deuxle">32dp</dimen>
+
 </resources>
